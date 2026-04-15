@@ -1,0 +1,5 @@
+- GRUB misconfiguration can lock out system completely
+- BLS entries require explicit configuration
+- Rescue media is required for recovery in hardened systems
+- Systemd overrides are preffered over modifying base unit files
+- Availability controls must consider VM limitations
