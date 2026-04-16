@@ -1,0 +1,11 @@
+## Edit /etc/systemd/system/emergency.service.d/override.conf
+
+sudo mkdir -p /etc/systemd/system/emergency.service.d
+
+sudo vi /etc/systemd/system/emergency.service.d/override.conf
+
+## Add the following content:
+
+[Service]
+ExecStart=
+ExecStart=-/sbin/sulogin
