@@ -1,0 +1,3 @@
+systemctl status ctrl-alt-del.target
+
+Loaded: masked (/dev/null; bad)
