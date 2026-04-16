@@ -1,0 +1,10 @@
+## Edit /etc/systemd/system/rescue.service.d/override.conf
+sudo mkdir -p /etc/systemd/system/rescue.service.d
+
+sudo vi /etc/systemd/system/rescue.service.d/override.conf
+
+## Add the following content:
+
+[Service]
+ExecStart=
+ExecStart=-/sbin/sulogin
