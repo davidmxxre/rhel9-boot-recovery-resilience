@@ -1,0 +1,7 @@
+vi /etc/grub.d/01_users
+
+#!/usr/bin/sh -e
+cat << EOF
+set superusers="admin"
+password_pbkdf2 admin grub.pbkdf2.sha512.10000.YOUR_HASH_HERE
+EOF
