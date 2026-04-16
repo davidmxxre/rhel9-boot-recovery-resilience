@@ -1,0 +1,3 @@
+Booted with systemd.unit=emergency.target
+System prompted for root password
+Access denied without authentication
