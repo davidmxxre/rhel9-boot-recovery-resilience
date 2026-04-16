@@ -1,0 +1,25 @@
+systemctl edit sshd
+
+## This opens a drop-in override file, not the main service file (/etc/systemd/system/sshd.service.d/override.conf)
+
+In the file you will see the following comment:
+
+### Lines below this comment will be discarded ###
+
+## Add what you want to override above that line
+
+Example: add the following…
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+
+Save the file
+Apply the change
+
+systemctl daemon-reexec
+systemctl restart sshd
+
+Verify
+
+systemctl show sshd | grep Restart
