@@ -1,0 +1,3 @@
+GRUB menu accessible
+Pressing 'e' prompts for username/password
+Access granted after authentication
