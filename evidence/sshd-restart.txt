@@ -1,0 +1,4 @@
+systemctl show sshd | grep Restart
+
+Restart=on-failure
+RestartUSec=5s
