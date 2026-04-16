@@ -1,0 +1,5 @@
+systemctl is-failed
+0
+
+systemctl --failed
+0 loaded units listed
